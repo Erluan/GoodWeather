@@ -17,6 +17,7 @@
 		1A3AD37E27C1698900B3B607 /* GoodWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD37D27C1698900B3B607 /* GoodWeatherUITestsLaunchTests.swift */; };
 		1A3AD38C27C18C7D00B3B607 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD38B27C18C7D00B3B607 /* WeatherListTableViewController.swift */; };
 		1A3AD38E27C18CC300B3B607 /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD38D27C18CC300B3B607 /* AddWeatherCityViewController.swift */; };
+		1A3AD39127C1964C00B3B607 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD39027C1964C00B3B607 /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1A3AD37D27C1698900B3B607 /* GoodWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1A3AD38B27C18C7D00B3B607 /* WeatherListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewController.swift; sourceTree = "<group>"; };
 		1A3AD38D27C18CC300B3B607 /* AddWeatherCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewController.swift; sourceTree = "<group>"; };
+		1A3AD39027C1964C00B3B607 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		1A3AD35927C1698300B3B607 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				1A3AD38F27C1962B00B3B607 /* CustomCells */,
 				1A3AD38A27C18C6000B3B607 /* Controllers */,
 				1A3AD35A27C1698300B3B607 /* AppDelegate.swift */,
 				1A3AD35C27C1698300B3B607 /* SceneDelegate.swift */,
@@ -136,6 +139,14 @@
 				1A3AD38D27C18CC300B3B607 /* AddWeatherCityViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A3AD38F27C1962B00B3B607 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				1A3AD39027C1964C00B3B607 /* WeatherCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			files = (
 				1A3AD38C27C18C7D00B3B607 /* WeatherListTableViewController.swift in Sources */,
 				1A3AD35B27C1698300B3B607 /* AppDelegate.swift in Sources */,
+				1A3AD39127C1964C00B3B607 /* WeatherCell.swift in Sources */,
 				1A3AD38E27C18CC300B3B607 /* AddWeatherCityViewController.swift in Sources */,
 				1A3AD35D27C1698300B3B607 /* SceneDelegate.swift in Sources */,
 			);
