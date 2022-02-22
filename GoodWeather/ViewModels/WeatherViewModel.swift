@@ -10,7 +10,19 @@ import UIKit
 
 class WeatherListViewModel {
     
+    private var weatherViewModels = [WeatherViewModel]()
     
+    func addWeatherViewModel(_ vm: WeatherViewModel) {
+        weatherViewModels.append(vm)
+    }
+    
+    func numberOfRows(_ section: Int) -> Int {
+        return weatherViewModels.count
+    }
+    
+    func modelAt(_ index: Int) -> WeatherViewModel {
+        return weatherViewModels[index]
+    }
     
 }
 
@@ -23,7 +35,7 @@ class WeatherViewModel {
     }
     
     var city: String {
-        return weather.name.name
+        return weather.location.name
     }
     
     var temperatureC: Double {

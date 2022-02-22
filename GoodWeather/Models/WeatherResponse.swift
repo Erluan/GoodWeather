@@ -8,7 +8,7 @@
 import Foundation
 
 struct WeatherResponse: Decodable {
-    let name: Location
+    let location: Location
     let current: Weather
 }
 

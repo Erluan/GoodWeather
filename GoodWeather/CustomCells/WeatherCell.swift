@@ -13,4 +13,11 @@ class WeatherCell: UITableViewCell {
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     
+    // TODO: Implement Unit Setting Here
+    func configure(_ vm: WeatherViewModel) {
+        self.cityNameLabel.text = vm.city
+        self.temperatureLabel.text = "\(vm.temperatureC.formatAsDegree())"
+    }
+    
+    
 }
