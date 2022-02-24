@@ -24,14 +24,48 @@ class WeatherListViewModel {
         return weatherViewModels[index]
     }
     
+    private func toCelsius() {
+        
+        weatherViewModels = weatherViewModels.map { vm in
+            let weatherModel = vm
+            // Case the temp comes in Kelvin
+            // weatherModel.temperature = (weatherModel.temperature - 32) * 5/9
+            weatherModel.temperature = weatherModel.temperatureC
+            return weatherModel
+        }
+        
+    }
+    
+    private func toFahrenheit() {
+        
+        weatherViewModels = weatherViewModels.map { vm in
+            let weatherModel = vm
+            // Case the temp comes in Kelvin
+            // weatherModel.temperature = (weatherModel.temperature * 9/5) + 32
+            weatherModel.temperature = weatherModel.temperatureF
+            return weatherModel
+        }
+    }
+    
+    func updateUnit(to unit: Unit) {
+        switch unit {
+            case .celsius:
+                toCelsius()
+            case .farenheit:
+                toFahrenheit()
+        }
+    }
+    
 }
 
 class WeatherViewModel {
     
     let weather: WeatherResponse
+    var temperature: Double
     
     init(weather: WeatherResponse) {
         self.weather = weather
+        temperature = weather.current.temp_c
     }
     
     var city: String {

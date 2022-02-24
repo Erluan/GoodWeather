@@ -58,7 +58,7 @@
                     <navigationItem key="navigationItem" title="GoodWeather" id="9rb-lh-7PL">
                         <barButtonItem key="leftBarButtonItem" title="Setting" id="qsY-uw-7RV">
                             <connections>
-                                <segue destination="m3n-PC-ZeK" kind="presentation" id="sqr-Sb-1bh"/>
+                                <segue destination="m3n-PC-ZeK" kind="presentation" identifier="SettingsTableViewController" id="sqr-Sb-1bh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Puc-Uy-Ncs">
@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y1X-8O-ctp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="y1X-8O-ctp">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y1X-8O-ctp" id="eBv-Ax-ldc">
@@ -156,12 +156,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="93A-Vb-aLn">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="c57-BA-6cb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="c57-BA-6cb">
+                            <connections>
+                                <action selector="done" destination="21M-bZ-c8H" id="UzA-FK-TgR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRm-XF-y9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730" y="-524"/>
+            <point key="canvasLocation" x="2728.985507246377" y="-524.33035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TwO-yA-d1T">
