@@ -18,7 +18,6 @@
 		1A3AD36227C1698300B3B607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3AD36027C1698300B3B607 /* Main.storyboard */; };
 		1A3AD36427C1698800B3B607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3AD36327C1698800B3B607 /* Assets.xcassets */; };
 		1A3AD36727C1698800B3B607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3AD36527C1698800B3B607 /* LaunchScreen.storyboard */; };
-		1A3AD37227C1698900B3B607 /* GoodWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD37127C1698900B3B607 /* GoodWeatherTests.swift */; };
 		1A3AD37C27C1698900B3B607 /* GoodWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD37B27C1698900B3B607 /* GoodWeatherUITests.swift */; };
 		1A3AD37E27C1698900B3B607 /* GoodWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD37D27C1698900B3B607 /* GoodWeatherUITestsLaunchTests.swift */; };
 		1A3AD38C27C18C7D00B3B607 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD38B27C18C7D00B3B607 /* WeatherListTableViewController.swift */; };
@@ -27,6 +26,7 @@
 		1A3AD39427C1A3B500B3B607 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AD39327C1A3B400B3B607 /* WebService.swift */; };
 		1A449A8427C58F4F00924585 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A449A8327C58F4F00924585 /* SettingsTableViewController.swift */; };
 		1A449A8627C590DB00924585 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A449A8527C590DB00924585 /* SettingsViewModel.swift */; };
+		1A6366D027D7E85C00903EC7 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6366CF27D7E85C00903EC7 /* SettingsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,6 @@
 		1A3AD36627C1698800B3B607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3AD36827C1698800B3B607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3AD36D27C1698900B3B607 /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A3AD37127C1698900B3B607 /* GoodWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherTests.swift; sourceTree = "<group>"; };
 		1A3AD37727C1698900B3B607 /* GoodWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3AD37B27C1698900B3B607 /* GoodWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherUITests.swift; sourceTree = "<group>"; };
 		1A3AD37D27C1698900B3B607 /* GoodWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		1A3AD39327C1A3B400B3B607 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		1A449A8327C58F4F00924585 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		1A449A8527C590DB00924585 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		1A6366CF27D7E85C00903EC7 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +176,7 @@
 		1A3AD37027C1698900B3B607 /* GoodWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A3AD37127C1698900B3B607 /* GoodWeatherTests.swift */,
+				1A6366CF27D7E85C00903EC7 /* SettingsViewModelTests.swift */,
 			);
 			path = GoodWeatherTests;
 			sourceTree = "<group>";
@@ -368,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3AD37227C1698900B3B607 /* GoodWeatherTests.swift in Sources */,
+				1A6366D027D7E85C00903EC7 /* SettingsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

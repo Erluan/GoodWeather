@@ -29,15 +29,15 @@ extension Unit {
 class SettingsViewModel {
     
     let units = Unit.allCases
+    private var _selectedUnit: Unit = Unit.farenheit
     
     var selectedUnit: Unit {
         get {
             let userDefault = UserDefaults.standard
-            var unitValue = ""
             if let value = userDefault.value(forKey: "unit") as? String {
-                unitValue = value
+                return Unit(rawValue: value)!
             }
-            return Unit(rawValue: unitValue)!
+            return _selectedUnit
         }
         set {
             let userDefault = UserDefaults.standard
